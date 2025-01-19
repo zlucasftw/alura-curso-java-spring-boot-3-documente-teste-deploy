@@ -1,4 +1,4 @@
-package med.voll.api.infra.springdoc;
+package br.com.alura.med.voll.api.config.springdoc;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class SpringDocConfigurations {
+public class SpringDocConfiguration {
 
     @Bean
     public OpenAPI customOpenAPI() {
@@ -23,14 +23,14 @@ public class SpringDocConfigurations {
                                         .bearerFormat("JWT")))
                 .info(new Info()
                         .title("Voll.med API")
-                        .description("API Rest da aplicação Voll.med, contendo as funcionalidades de " +
-                                "CRUD de médicos e de pacientes, além de agendamento e cancelamento de consultas")
+                        .description("REST API for the Voll.med application, including CRUD operations " +
+                                "for doctors and patients, as well as booking and cancellation of appointments.")
                         .contact(new Contact()
-                                .name("Time Backend")
+                                .name("Backend Team")
                                 .email("backend@voll.med"))
                         .license(new License()
-                                .name("Apache 2.0")
-                                .url("http://voll.med/api/licenca")));
+                                .name("AGPL V3")
+                                .url("http://voll.med/api/license")));
     }
 
 }

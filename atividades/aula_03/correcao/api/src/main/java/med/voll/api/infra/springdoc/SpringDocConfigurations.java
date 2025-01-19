@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 public class SpringDocConfigurations {
 
     @Bean
-    public OpenAPI customOpenAPI() {
+    public OpenAPI customOpenApi() {
         return new OpenAPI()
                 .components(new Components()
                         .addSecuritySchemes("bearer-key",
@@ -23,8 +23,7 @@ public class SpringDocConfigurations {
                                         .bearerFormat("JWT")))
                 .info(new Info()
                         .title("Voll.med API")
-                        .description("API Rest da aplicação Voll.med, contendo as funcionalidades de " +
-                                "CRUD de médicos e de pacientes, além de agendamento e cancelamento de consultas")
+                        .description("API Rest da aplicação Voll.med, contendo as funcionalidades de CRUD de médicos e de pacientes, além de agendamento e cancelamento de consultas")
                         .contact(new Contact()
                                 .name("Time Backend")
                                 .email("backend@voll.med"))
