@@ -167,12 +167,12 @@ api.security.token.secret=${JWT_SECRET:12345678}
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/zlucasftw/medvoll-api.git
+git clone https://github.com/zlucasftw/alura-curso-java-spring-boot-3-documente-teste-deploy.git
 ```
 
 2. Navigate to project directory:
 ```bash
-cd medvoll-api
+cd alura-curso-java-spring-boot-3-documente-teste-deploy
 ```
 
 3. Create and configure the `.env` file as described above
