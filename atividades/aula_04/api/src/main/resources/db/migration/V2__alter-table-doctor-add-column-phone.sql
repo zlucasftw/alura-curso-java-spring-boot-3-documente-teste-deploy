@@ -1,0 +1,3 @@
+ALTER TABLE doctor
+ADD COLUMN phone VARCHAR(20) NOT NULL
+AFTER email;

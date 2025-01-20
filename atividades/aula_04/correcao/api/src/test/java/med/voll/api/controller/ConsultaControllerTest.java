@@ -16,7 +16,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.time.LocalDateTime;
 
@@ -54,7 +53,7 @@ class ConsultaControllerTest {
     }
 
     @Test
-    @DisplayName("Deveria devolver codigo http 200 quando informacoes estao validas")
+    @DisplayName("Deveria devolver codigo http 200 quando informacoes estao validadas")
     @WithMockUser
     void agendar_cenario2() throws Exception {
         var data = LocalDateTime.now().plusHours(1);
